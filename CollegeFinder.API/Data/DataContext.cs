@@ -5,9 +5,11 @@ namespace CollegeFinder.Api.Data
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions option) : base(option){}
+        public DataContext(DbContextOptions option) : base(option) { }
 
         public DbSet<Value> Values { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<College> Colleges { get; set; }
+        public DbSet<Major> Majors { get; set; }
     }
 }
